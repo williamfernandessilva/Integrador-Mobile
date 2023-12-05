@@ -1,6 +1,9 @@
-* {
+body {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
+}
+*{
+  background-color: antiquewhite;
 }
 @import "@ionic/angular/css/core.css";
 @import "@ionic/angular/css/normalize.css";
