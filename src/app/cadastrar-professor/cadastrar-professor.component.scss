@@ -1,19 +1,10 @@
 body{
-    text-align: center;
     justify-content: center;
+    align-items: center;
 }
-
 p{
-    font-size:32px;
+    font-size: 32px;
     color: black;
-}
-
-input{
-    padding: 6px;
-    width: 86%;
-    border-radius: 5px;
-    color: black;
-    border-color: black;
 }
 .button {
     display: flex;
@@ -29,7 +20,7 @@ input{
     color: #FFFFFF;
     font-size: 18px;
     border: none;
-    padding: 14px;
+    padding: 10px;
     border-radius: 5px;
   }
   

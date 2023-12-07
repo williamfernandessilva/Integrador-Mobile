@@ -1,14 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicial-coordenador',
   templateUrl: './inicial-coordenador.component.html',
   styleUrls: ['./inicial-coordenador.component.scss'],
 })
-export class InicialCoordenadorComponent  implements OnInit {
+export class InicialCoordenadorComponent  {
 
-  constructor() { }
+    constructor(private router: Router) {}
 
-  ngOnInit() {}
+    goToCadastrarProfessor() {
+        this.router.navigate(['/cadastrar-professor']);
+    }
+    goToHistorico() {
+      this.router.navigate(['/historico']);
+  }
+  goToGradeProfessor() {
+    this.router.navigate(['/grade-professor']);
+}
 
 }

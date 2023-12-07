@@ -1,20 +1,3 @@
-body{
-    text-align: center;
-    justify-content: center;
-}
-
-p{
-    font-size:32px;
-    color: black;
-}
-
-input{
-    padding: 6px;
-    width: 86%;
-    border-radius: 5px;
-    color: black;
-    border-color: black;
-}
 .button {
     display: flex;
     flex-direction: column;
@@ -23,13 +6,16 @@ input{
     margin-top: 90px;
   }
   
-  .button button {
+.button button {
     width: 68%;
     background-color: #FA3737;
     color: #FFFFFF;
     font-size: 18px;
     border: none;
-    padding: 14px;
+    padding: 10px;
     border-radius: 5px;
   }
-  
+p {
+    font-size: 32px;
+    color: #000000;
+  }
