@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CadastrarProfessorService } from './cadastrar-professor.service';
+import { CadastrarprofessorService } from './cadastrar-professor.service';
 
 describe('CadastrarProfessorService', () => {
-  let service: CadastrarProfessorService;
+  let service: CadastrarprofessorService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(CadastrarProfessorService);
+    service = TestBed.inject(CadastrarprofessorService);
   });
 
   it('should be created', () => {

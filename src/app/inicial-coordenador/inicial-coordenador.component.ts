@@ -19,5 +19,7 @@ export class InicialCoordenadorComponent  {
   goToGradeProfessor() {
     this.router.navigate(['/grade-professor']);
 }
-
+goToGradeAluno() {
+  this.router.navigate(['/grade-aluno']);
+}
 }

@@ -1,5 +1,5 @@
 export interface CadastrarProfessor {
-    ra: string;
+    id: number;
     nome: string;
     sala: string;
     data: string;
@@ -7,4 +7,3 @@ export interface CadastrarProfessor {
     materia: string;
     horario: string;
   }
-  

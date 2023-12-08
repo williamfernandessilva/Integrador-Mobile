@@ -1,17 +1,72 @@
-<body>
-  <p>
-    Cadastrar Professor
-  </p>
-  <div class="input">
-    <input type="text" placeholder="RA:">
-    <input type="text" placeholder="Nome:">
-    <input type="text" placeholder="Salas:">
-    <input type="text" placeholder="Data:">
-    <input type="text" placeholder="Curso:">
-    <input type="text" placeholder="Semestre:">
-    <input type="text" placeholder="Matéria:">
+<div class="container mt-3">
+  <h1 class="text-center">Cadastrar Professor</h1>
+
+  <form [formGroup]="formGroupCadastrarProfessor">
+    <div class="mb-2" style="margin-top: 50px; margin-left: 200px; margin-right: 200px;">
+      <!-- Seu conteúdo do formulário aqui -->
+    </div>
+
+    <div class="mb-2">
+      <label for="name" class="form-label">Nome:</label>
+      <input type="text" formControlName="nome" class="form-control" id="name" placeholder="Nome">
+    </div>
+
+    <div class="mb-2">
+      <label for="salas" class="form-label">Salas:</label>
+      <input type="email" formControlName="sala" class="form-control" id="sala" placeholder="Salas">
+    </div>
+
+    <div class="mb-2">
+      <label for="data" class="form-label">Data:</label>
+      <input type="date" formControlName="data" class="form-control" id="data" placeholder="Data">
+    </div>
+
+    <div class="mb-2">
+      <label for="materia" class="form-label">Matéria:</label>
+      <input type="text" formControlName="materia" class="form-control" id="materia" placeholder="Matéria">
+    </div>
+
+    <div class="mb-2">
+      <label for="horario" class="form-label">Horario:</label>
+      <input type="text" formControlName="horario" class="form-control" id="horario" placeholder="Horario">
+    </div>
+
+    <div class="mb-2">
+      <label for="curso" class="form-label">Curso:</label>
+      <input type="text" formControlName="curso" class="form-control" id="curso" placeholder="Curso">
+    </div>
+
+    <button (click)="save()">Salvar</button>
+    <button (click)="clean()">Limpar</button>
+  </form>
+
+  <div class="mb-3">
+    <div class="mb-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Salas</th>
+            <th scope="col">Data</th>
+            <th scope="col">Matéria</th>
+            <th scope="col">Horario</th>
+            <th scope="col">Curso</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cadastrarProfessor of cadastrarProfessor">
+            <th scope="row">{{ cadastrarProfessor.id }}</th>
+            <td>{{ cadastrarProfessor.nome }}</td>
+            <td>{{ cadastrarProfessor.sala }}</td>
+            <td>{{ cadastrarProfessor.data }}</td>
+            <td>{{ cadastrarProfessor.materia }}</td>
+            <td>{{ cadastrarProfessor.horario }}</td>
+            <td>{{ cadastrarProfessor.curso }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div class="button">
-    <button>Enviar</button>
-  </div>
-</body>
+</div>
