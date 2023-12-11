@@ -22,4 +22,7 @@ export class InicialCoordenadorComponent  {
 goToGradeAluno() {
   this.router.navigate(['/grade-aluno']);
 }
+goToBack() {
+  this.router.navigate(['/login-coordenador']);
+}
 }

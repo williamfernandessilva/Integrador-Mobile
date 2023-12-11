@@ -35,9 +35,11 @@
       <label for="curso" class="form-label">Curso:</label>
       <input type="text" formControlName="curso" class="form-control" id="curso" placeholder="Curso">
     </div>
-
-    <button (click)="save()">Salvar</button>
+    <div class="button">
+    <button (click)="save()" (click)="goToGradeProfessor()">Enviar</button>
     <button (click)="clean()">Limpar</button>
+    <button (click)="goToBack()">Voltar</button>
+  </div>
   </form>
 
   <div class="mb-3">

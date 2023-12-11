@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms'; 
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { CadastrarprofessorService } from '../cadastrar-professor.service';
 import { CadastrarProfessor } from '../cadastrar-professor.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastrar-professor',
@@ -14,6 +15,7 @@ export class CadastrarProfessorComponent implements OnInit {
   formGroupCadastrarProfessor: FormGroup;
 
   constructor(
+  private router: Router,
     private cadastrarProfessorService: CadastrarprofessorService,
     private formBuilder: FormBuilder
   ) {
@@ -71,5 +73,11 @@ export class CadastrarProfessorComponent implements OnInit {
     this.cadastrarProfessorService.delete(cadastrarProfessor).subscribe({
       next: () => this.loadProfessor(),
     });
+  }
+  goToBack() {
+    this.router.navigate(['/inicial-coordenador']);
+  }
+  goToGradeProfessor() {
+    this.router.navigate(['/grade-professor']);
   }
 }

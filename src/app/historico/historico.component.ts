@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class HistoricoComponent  {
   constructor(private router: Router) {}
 
-  goToInicalCoordenador() {
+  goToBack() {
       this.router.navigate(['/inicial-coordenador']);
   }
 

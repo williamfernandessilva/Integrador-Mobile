@@ -12,5 +12,8 @@ export class LoginCoordenadorComponent   {
     goToInicialCoordenador() {
         this.router.navigate(['/inicial-coordenador']);
     }
+    goToHome() {
+      this.router.navigate(['/home']);
+  }
 
 }
